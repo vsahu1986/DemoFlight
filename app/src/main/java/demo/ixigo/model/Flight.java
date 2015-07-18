@@ -55,8 +55,6 @@ public class Flight implements Parcelable {
     }
 
     protected Flight(Parcel in) {
-        this.airlineMap = (HashMap<String, String>) in.readSerializable();
-        this.airportMap = (HashMap<String, String>) in.readSerializable();
 
         airlineMap = new HashMap<String, String>();
         airlineMap = readFromParcel(in, airlineMap);
