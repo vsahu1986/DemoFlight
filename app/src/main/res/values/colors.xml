@@ -1,0 +1,14 @@
+<resources>
+
+
+
+
+    <color name="colorPrimaryDark">#00A2B5</color>
+    <color name="colorPrimary_Translucent">#00CDE5</color>
+    <color name="colorPrimary">#00CDE5</color>
+    <color name="windowBackgroundColor">#333333</color>
+    <color name="black_translucent">#80000000</color>
+    <color name="gray">#ff888888</color>
+    <color name="splash_screen_color">#BBFFEE</color>
+
+</resources>

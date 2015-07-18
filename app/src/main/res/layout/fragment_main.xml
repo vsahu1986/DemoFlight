@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <demo.ixigo.ui.widget.CheckedRegularTextView
+            android:id="@+id/tv_depart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/filter_text_selector"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:text="Time" />
+
+        <demo.ixigo.ui.widget.CheckedRegularTextView
+            android:id="@+id/tv_duration"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:textColor="@color/filter_text_selector"
+            android:text="Duration" />
+
+        <demo.ixigo.ui.widget.CheckedRegularTextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:clickable="true"
+            android:textColor="@color/filter_text_selector"
+            android:text="Price" />
+    </LinearLayout>
+</RelativeLayout>

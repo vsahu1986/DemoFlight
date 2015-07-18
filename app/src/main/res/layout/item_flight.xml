@@ -1,0 +1,113 @@
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="#f2f5f2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sdefault" />
+
+        <demo.ixigo.ui.widget.RegularTextView
+            android:id="@+id/tv_airline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:gravity="left"
+            android:text="Airline "
+            android:textColor="#6F3F69"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <demo.ixigo.ui.widget.MeduimTextView
+        android:id="@+id/tv_price"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:gravity="right"
+        android:text="Rs 4545"
+        android:textColor="#0b93d8"
+        android:textSize="16sp"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="44dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <demo.ixigo.ui.widget.MeduimTextView
+                android:id="@+id/tv_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:04 "
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <demo.ixigo.ui.widget.RegularTextView
+                android:id="@+id/tv_flight_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economy "
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/black_arrow"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <demo.ixigo.ui.widget.MeduimTextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:45 "
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <demo.ixigo.ui.widget.RegularTextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2hr 30 m"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
